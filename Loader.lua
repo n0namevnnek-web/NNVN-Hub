@@ -5,7 +5,7 @@ end
 if identifyexecutor then
     local execName = tostring(identifyexecutor()):lower()
     if execName:find("solara") or execName:find("xeno") then
-        game:GetService("Players").LocalPlayer:Kick("EXECUTOR NOT SUPPORTED[PLEASE DON'T GET MAD THIS IS SOLARA/XENO'S FAULT]")
+        game:GetService("Players").LocalPlayer:Kick("🔴 EXECUTOR NOT SUPPORTED[PLEASE DON'T GET MAD THIS IS SOLARA/XENO'S FAULT]")
         return
     end
 end
