@@ -40,7 +40,6 @@ local gameUrls = {
     [119609933650338] = "https://raw.githubusercontent.com/n0namevnnek-web/Dog-Race/refs/heads/main/Key.lua",
     [1537690962] = "https://raw.githubusercontent.com/n0namevnnek-web/Bee-Swarm-Simulator/refs/heads/main/Key.lua",
     [100400297022629] = "https://raw.githubusercontent.com/n0namevnnek-web/Duels-Warriors/refs/heads/main/Key.lua",
-    -- Các game mới thêm
     [112641748896693] = "https://raw.githubusercontent.com/n0namevnnek-web/Missiles-vs-Cities/refs/heads/main/Key.lua",
     [116223724643557] = "https://raw.githubusercontent.com/n0namevnnek-web/-1-Magic-Evolution/refs/heads/main/Key.lua",
     [89469502395769] = "https://raw.githubusercontent.com/n0namevnnek-web/Kick-A-Lucky-Block/refs/heads/main/key.lua",
