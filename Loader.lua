@@ -59,9 +59,14 @@ local gameUrls = {
     [10260193230] = "https://raw.githubusercontent.com/n0namevnnek-web/Meme-sea/refs/heads/main/Key.lua",
     [7711635737] = "https://raw.githubusercontent.com/n0namevnnek-web/Emergency-Hamburg/refs/heads/main/Key.lua",
     [12998806177] = "https://raw.githubusercontent.com/n0namevnnek-web/Kill-Streak/refs/heads/main/Key.lua",
-    [114234929420007] = "https://raw.githubusercontent.com/n0namevnnek-web/Blox-Strike-/refs/heads/main/Key.lua"
-    [94640181989498] = "https://raw.githubusercontent.com/n0namevnnek-web/Grow-a-Chicken-Fighter/refs/heads/main/Key.lua"
-    [108307565942574] = "https://raw.githubusercontent.com/n0namevnnek-web/Hero-RNG-/refs/heads/main/Key.lua"
+    [114234929420007] = "https://raw.githubusercontent.com/n0namevnnek-web/Blox-Strike-/refs/heads/main/Key.lua",
+    [94640181989498] = "https://raw.githubusercontent.com/n0namevnnek-web/Grow-a-Chicken-Fighter/refs/heads/main/Key.lua",
+    [13400517693] = "https://raw.githubusercontent.com/n0namevnnek-web/Goofy-Gods/refs/heads/main/Key.lua",
+    [90086669327265] = "https://raw.githubusercontent.com/n0namevnnek-web/-1-Cut-Grass-Adventure/refs/heads/main/Key.lua",
+    [108307565942574] = "https://raw.githubusercontent.com/n0namevnnek-web/Hero-RNG-/refs/heads/main/Key.lua",
+    [107778070777162] = "https://raw.githubusercontent.com/n0namevnnek-web/Steal-An-Egg-/refs/heads/main/Key.lua",
+    [2753915549] = "https://raw.githubusercontent.com/n0namevnnek-web/Blox-Fruit/refs/heads/main/Key.lua",
+    [99925503388128] = "https://raw.githubusercontent.com/n0namevnnek-web/Fishing-Master/refs/heads/main/Key.lua",
 }
 
 local url = gameUrls[game.PlaceId]
