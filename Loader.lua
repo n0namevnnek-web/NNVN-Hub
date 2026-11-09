@@ -69,6 +69,7 @@ local gameUrls = {
     [99925503388128] = "https://raw.githubusercontent.com/n0namevnnek-web/Fishing-Master/refs/heads/main/Key.lua",
     [97617452700163] = "https://raw.githubusercontent.com/n0namevnnek-web/Anime-Eye/refs/heads/main/Key.lua",
     [6938803436] = "https://raw.githubusercontent.com/n0namevnnek-web/Anime-Dimension/refs/heads/main/Key.lua",
+    [97289366402005] = "https://raw.githubusercontent.com/n0namevnnek-web/Fake-An-Egg/refs/heads/main/Key.lua",
 }
 
 local url = gameUrls[game.PlaceId]
