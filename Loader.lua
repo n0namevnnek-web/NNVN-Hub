@@ -3,7 +3,7 @@ if not game:IsLoaded() then
 end
 
 if identifyexecutor then
-    local execName = tostring(identifyexecutor()):lower()
+    local execName = tostring((identifyexecutor())):lower()
     if execName:find("solara") or execName:find("xeno") then
         game:GetService("Players").LocalPlayer:Kick("🔴 EXECUTOR NOT SUPPORTED[PLEASE DON'T GET MAD THIS IS SOLARA/XENO'S FAULT]")
         return
@@ -71,6 +71,7 @@ local gameUrls = {
     [6938803436] = "https://raw.githubusercontent.com/n0namevnnek-web/Anime-Dimension/refs/heads/main/Key.lua",
     [97289366402005] = "https://raw.githubusercontent.com/n0namevnnek-web/Fake-An-Egg/refs/heads/main/Key.lua",
     [104856666707760] = "https://raw.githubusercontent.com/n0namevnnek-web/KillStreak-Battle-Royale/refs/heads/main/Key.lua",
+    [108448382032231] = "https://raw.githubusercontent.com/n0namevnnek-web/KillStreak-Battle-Royale/refs/heads/main/Key.lua",
 }
 
 local url = gameUrls[game.PlaceId]
