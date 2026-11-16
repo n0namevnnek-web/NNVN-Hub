@@ -77,5 +77,44 @@ local gameUrls = {
 local url = gameUrls[game.PlaceId]
 if url then
     task.wait(math.random())
-    loadstring(game:HttpGet(url))()
+
+    -- Use a unique query value so executors do not reuse an outdated GitHub response.
+    local separator = string.find(url, "?", 1, true) and "&" or "?"
+    local requestUrl = url
+        .. separator
+        .. "nnvn_cache="
+        .. tostring(os.time())
+        .. "_"
+        .. tostring(math.random(100000, 999999))
+
+    local downloaded, source = pcall(function()
+        return game:HttpGet(requestUrl)
+    end)
+
+    if not downloaded then
+        warn("[NNVN Hub] Download failed: " .. tostring(source))
+        return
+    end
+
+    if type(source) ~= "string" or source == "" then
+        warn("[NNVN Hub] The downloaded script is empty or invalid.")
+        return
+    end
+
+    local scriptFunction, compileError = loadstring(source, "@NNVN_" .. tostring(game.PlaceId))
+
+    if not scriptFunction then
+        warn("[NNVN Hub] Compile error: " .. tostring(compileError))
+        return
+    end
+
+    local executed, runtimeError = xpcall(scriptFunction, function(errorMessage)
+        return debug.traceback(tostring(errorMessage), 2)
+    end)
+
+    if not executed then
+        warn("[NNVN Hub] Runtime error:\n" .. tostring(runtimeError))
+    end
+else
+    warn("[NNVN Hub] This game is not supported. Place ID: " .. tostring(game.PlaceId))
 end
